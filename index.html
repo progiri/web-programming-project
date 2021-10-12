@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>3D radio</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <header class="header">
+            <div class="header__section">
+                <h1 class="header__logo">3D radio</h1>
+            </div>
+            <div class="header__section">
+                <div class="header__item">
+                    <a class="header__link" href="#">Sign up</a>
+                </div>
+                <div class="header__item">
+                    <a class="header__link" href="#">Login</a>
+                </div>
+            </div>
+        </header>
+        <div id="3d_obj">
+            <!-- <canvas id="canvasColor"></canvas> -->
+            <!-- Place for three.js -->
+        </div>
+        <footer class="footer">
+            <div class="footer__section">
+                <div class="select-container">
+                    <div class="select-box">
+                        <div class="options-container">
+                            <div class="option">
+                                <input type="radio" class="radio-btn" id="first" name="music">
+                                <label for="first">First</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio-btn" id="second" name="music">
+                                <label for="second">Second</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio-btn" id="third" name="music">
+                                <label for="third">Third</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio-btn" id="four" name="music">
+                                <label for="four">Fourth</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio-btn" id="fives" name="music">
+                                <label for="fives">Fifth</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio-btn" id="sixth" name="music">
+                                <label for="sixth">Sixth</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio-btn" id="seventh" name="music">
+                                <label for="seventh">Seventh</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio-btn" id="eighth" name="music">
+                                <label for="eighth">Eighth</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio-btn" id="ninth" name="music">
+                                <label for="ninth">Ninth</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" class="radio-btn" id="tenth" name="music">
+                                <label for="tenth">Tenth</label>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            Selected Music
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__section">
+                <div class="btns-container">
+                    <button class="action-btns">
+                        <div class="btn-previous"></div>
+                    </button>
+                    <button class="action-btns">
+                        <div class="btn-pause"></div>
+                    </button>
+                    <button class="action-btns">
+                        <div class="btn-play"></div>
+                    </button>
+                    <button class="action-btns">
+                        <div class="btn-next"></div>
+                    </button>
+                </div>
+            </div>
+            <div class="footer__section">
+                <div class="volume-container">
+                    <div class="volume-slider">
+                        <div class="volume-number">
+                            <div class="volume-icon"></div>
+                            <div id="volume-number">0</div>
+                        </div>
+                        <input type="range" min="0" max="100" value="0" id="slider">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/three.module.js"></script>
+    <script src="scripts/GLTFLoader.js"></script>
+    <script type="module" src="scripts/3d.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
